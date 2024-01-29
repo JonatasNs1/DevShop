@@ -1,6 +1,6 @@
 ﻿using Compartilhado.Model;
 using Microsoft.AspNetCore.Mvc;
-
+using Compartilhado;
 namespace Cadastrador.Controllers
 {
     [Route("api/[controller]")]
