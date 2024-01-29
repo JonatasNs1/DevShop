@@ -12,9 +12,8 @@ namespace Compartilhado
 {
     public static class Amazon
     {
-        public static async Task SalvarAsync(this Pedido pedido)
-        {
-            var client = new AmazonDynamoDBClient(RegionEndpoint.SAEast1);
+       public static async Task SalvarAsync(this Pedido pedido){
+            var client = new AmazonDynamoDBClient();
             var context = new DynamoDBContext(client);
             await context.SaveAsync(pedido);
         }
